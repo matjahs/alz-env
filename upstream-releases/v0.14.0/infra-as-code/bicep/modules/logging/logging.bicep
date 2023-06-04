@@ -93,7 +93,7 @@ resource resAutomationAccount 'Microsoft.Automation/automationAccounts@2021-06-2
   }
 }
 
-resource resLogAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2021-06-01' = {
+resource resLogAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2022-10-01' = {
   name: parLogAnalyticsWorkspaceName
   location: parLogAnalyticsWorkspaceLocation
   tags: parLogAnalyticsWorkspaceTags
@@ -121,7 +121,8 @@ resource resLogAnalyticsWorkspaceSolutions 'Microsoft.OperationsManagement/solut
 }]
 
 resource resLogAnalyticsLinkedServiceForAutomationAccount 'Microsoft.OperationalInsights/workspaces/linkedServices@2020-08-01' = {
-  name: '${resLogAnalyticsWorkspace.name}/Automation'
+  parent: resLogAnalyticsWorkspace
+  name: 'Automation'
   properties: {
     resourceId: resAutomationAccount.id
   }
