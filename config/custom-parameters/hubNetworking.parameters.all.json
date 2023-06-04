@@ -30,7 +30,7 @@
         },
         {
           "name": "AzureFirewallSubnet",
-          "ipAddressRange": "10.20.255.0/24",
+          "ipAddressRange": "10.20.252.0/24",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         },
