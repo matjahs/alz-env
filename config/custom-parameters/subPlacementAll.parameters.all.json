@@ -9,25 +9,21 @@
       "value": ""
     },
     "parIntRootMgSubs": {
-      "value": []
+      "value": [
+        "d5700354-acb2-414a-a283-416527bac855"
+      ]
     },
     "parPlatformMgSubs": {
       "value": []
     },
     "parPlatformManagementMgSubs": {
-      "value": [
-        "d5700354-acb2-414a-a283-416527bac855"
-      ]
+      "value": []
     },
     "parPlatformConnectivityMgSubs": {
-      "value": [
-        "d5700354-acb2-414a-a283-416527bac855"
-      ]
+      "value": []
     },
     "parPlatformIdentityMgSubs": {
-      "value": [
-        "d5700354-acb2-414a-a283-416527bac855"
-      ]
+      "value": []
     },
     "parLandingZonesMgSubs": {
       "value": []
